@@ -33,7 +33,7 @@ function Header({logo,CompanyName, UserName}) {
    }
 
    const deleteTodo = (index) => {
-      const newList = list.filter((_, index) => i !==index);
+      const newList = list.filter((_, i) => i !==index);
       setList(newList)
    }
 
@@ -92,7 +92,7 @@ function Header({logo,CompanyName, UserName}) {
 
             <input value={name} onChange={(e)=>setName(e.target.value)}/>
             <button type='submit' onClick={todo}>Submit</button>
-            <button onclick= {todoDelete}>Delete</button>
+            <button onclick= {deleteTodo}>Delete</button>
             <div>
                 <ul>
                     {

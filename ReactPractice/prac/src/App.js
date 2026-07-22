@@ -3,6 +3,8 @@ import Header from './Components/header';
 import Footer from './Components/footer';
 import Profile from './Components/profile';
 import StudentCard from './Components/StudentCard';
+import Events from './Components/events';
+import Login from './Components/Login';
 import { useState } from 'react';
 function App() {
 
@@ -48,7 +50,7 @@ function App() {
       showCollege : false
   }
 ];
-}
+
 
 const profiles = {
   rahul: {
@@ -118,6 +120,8 @@ const profiles = {
 
   return (
     <div className="App">
+      <Login/>
+      <Events/>
       
 
             <button style={{ padding: "8px 16px", marginTop: "10px" }} onClick={increment}> +1 </button>
