@@ -6,6 +6,7 @@ import StudentCard from './Components/StudentCard';
 import Events from './Components/events';
 import Login from './Components/Login';
 import { useState } from 'react';
+import Lists from './Components/lists';
 function App() {
 
   const people = [
@@ -120,6 +121,7 @@ const profiles = {
 
   return (
     <div className="App">
+      <Lists/>
       <Login/>
       <Events/>
       
