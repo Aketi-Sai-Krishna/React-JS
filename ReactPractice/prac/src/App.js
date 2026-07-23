@@ -7,6 +7,7 @@ import Events from './Components/events';
 import Login from './Components/Login';
 import { useState } from 'react';
 import Lists from './Components/lists';
+import Forms from './Components/Forms';
 function App() {
 
   const people = [
@@ -121,6 +122,7 @@ const profiles = {
 
   return (
     <div className="App">
+      <Forms/>
       <Lists/>
       <Login/>
       <Events/>

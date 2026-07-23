@@ -184,17 +184,6 @@ function Lists(){
         </tbody>
     </table>
     </div>
-
-    
-
-        
-       
-
-
-
-        
-
-
         </>
     );
 }
