@@ -2,7 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Login(){
+function Login(props){
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
     const [submit, setSubmit] = useState(false);
@@ -16,8 +16,9 @@ function Login(){
     }
 
    return( 
+
         <div className='loginPage' style={{backgroundColor: 'lightblue'}}>  
-            <h1>Login Page</h1>
+            <h1>Login Page {props.UserName}</h1>
             <div className='loginLayout'>
                 User Name: <input value={name} type="text" onChange={(e) => setName(e.target.value)} /><br/>
                 {submit && !name && (<p style={{color:'red'}}>Name is Required</p>)}

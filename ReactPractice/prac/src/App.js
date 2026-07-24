@@ -8,7 +8,14 @@ import Login from './Components/Login';
 import { useState } from 'react';
 import Lists from './Components/lists';
 import Forms from './Components/Forms';
+import TempInput from './Components/temp_cel';
+import Result from './Components/temp';
 function App() {
+
+  const[temperature, setTemperature] = useState("");
+  //initially temperature="";
+
+  //Owns the state.
 
   const people = [
   {
@@ -122,9 +129,17 @@ const profiles = {
 
   return (
     <div className="App">
+      <TempInput
+        temperature ={temperature}
+        setTemperature = {setTemperature}
+      />
+      <Result
+        temperature ={temperature}
+      />
       <Forms/>
       <Lists/>
-      <Login/>
+      <Login UserName="sai"/>
+      <Login UserName="krishna"/>
       <Events/>
       
 
